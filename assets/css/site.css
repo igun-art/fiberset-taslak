@@ -93,9 +93,18 @@ p { margin: 0 0 1em; }
 /* Giriş */
 .giris { position: relative; min-height: min(70vh, 620px); display: grid; align-items: center; overflow: hidden; isolation: isolate; }
 .giris picture, .giris-foto { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
-.giris::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(14, 42, 19, .78) 0%, rgba(14, 42, 19, .45) 55%, rgba(14, 42, 19, .1) 100%); }
-.giris-ic { padding: 56px 0; }
-.giris-kutu { max-width: 640px; color: #fff; }
+.giris::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(270deg, rgba(14, 42, 19, .8) 0%, rgba(14, 42, 19, .55) 38%, rgba(14, 42, 19, .08) 72%, rgba(14, 42, 19, 0) 100%); }
+.giris-ic { padding: 56px 0; display: flex; justify-content: flex-end; }
+.giris-foto { object-position: 30% 60%; }
+@media (max-width: 760px) {
+  /* Telefonda fotoğraf üstte, yazı altta: levhalı çit yazının altında kalmasın */
+  .giris { display: block; min-height: 0; background: var(--yesil-gece); }
+  .giris picture { position: relative; display: block; height: 290px; z-index: 0; }
+  .giris-foto { z-index: 0; object-position: 16% 80%; }
+  .giris::after { top: 210px; bottom: auto; height: 80px; z-index: 0; background: linear-gradient(0deg, var(--yesil-gece), rgba(14, 42, 19, 0)); }
+  .giris-ic { position: relative; z-index: 1; justify-content: flex-start; padding: 0 0 36px; }
+}
+.giris-kutu { max-width: 600px; color: #fff; }
 .giris-kutu .ust-yazi { color: var(--yesil-vurgu); }
 .giris h1 { font-size: clamp(2.2rem, 6vw, 3.9rem); font-weight: 800; letter-spacing: -.02em; text-wrap: balance; }
 .giris-alt { font-size: clamp(1.05rem, 2vw, 1.22rem); color: #EEF5EC; max-width: 34em; }
