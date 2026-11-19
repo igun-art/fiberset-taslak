@@ -1,26 +1,40 @@
-# Fiberset
+# Fiberset — Fiberglass kümes çiti levhaları
 
-> Fiberset, kümes çevresine konan fiberglass çit levhası satar. Levhalar 70 cm yüksekliğindedir: 20 cm toprağın altına, 50 cm toprağın üstüne gelir ve kümes çevresinde istenen kapalı engel şartını karşılar. Montaja hazır gelir, ücretsiz nakliyeyle kümese teslim edilir (genelde 3-5 gün). Hizmet bölgesi: Akhisar ve Manisa geneli.
+> Fiberset, kümes çevresindeki tel örgünün alt bölümünü kapatmak için fiberglass çit levhaları sunar. Levhalar 70 cm yüksekliğindedir. Standart boylar 100, 150, 200 ve 300 cm'dir. Köşe ve kapı yanları için özel kesim yapılabilir. Montajı alıcının ekibi yapar. Akhisar, Manisa ve Balıkesir için teslimat dahil teklif alınabilir. Biyogüvenlik Tebliği (No: 2025/33) tel örgü ya da çitin yer seviyesinden itibaren en az 50 cm duvarla desteklenmesini ister; Fiberset levhası tebliğe uygundur; tel örgünün bu alt bölümünü kapatır.
 
-- Yönetmelik: Kümes çevresinde toprak altında en az 20 cm, toprak üstünde en az 50 cm kapalı engel isteniyor; tel örgü tek başına yetmiyor. Kabul edilen malzemeler beton duvar, metal/sac ve fiberglass levhadır. Süre uzatılmazsa 31 Aralık 2026'da doluyor.
-- Fiberglass, Manisa İl Tarım ve Orman Müdürlüğü'nce kabul edilen malzemedir.
-- Malzeme: Fiberset levhaları fiberglasstır: paslanmaz, çürümez, küflenmez; neme, güneşe (UV) ve kimyasallara dayanır.
-- Montaj: Fiberset montaj hizmeti vermez. Levhalar montaja hazır gelir, uygulamayı kümes sahibinin ekibi yapar. Tel örgü yoksa önce tel örgü yapılır, levha ona bağlanır.
-- Fiyat: Kümes çevresinin uzunluğuna ve seçilen ölçüye göre teklif verilir. Fiyatlar kümese teslim fiyatıdır.
+## Sayfa bölümleri
+
+- [Ürünler ve ölçüler](https://fiberset.com.tr/#urunler)
+- [Levha ihtiyacını hesaplama](https://fiberset.com.tr/#hesapla): net çevre / levha boyu, yukarı yuvarlanır. Örnek: 100 m için 100 cm boyda 100, 150 cm boyda 67, 200 cm boyda 50, 300 cm boyda 34 levha. Levhaların eni (yüksekliği) standart 70 cm'dir.
+- [Tebliğ ve ölçü](https://fiberset.com.tr/#yonetmelik): biyogüvenlik tebliğinin çevre çiti için istedikleri ve levhanın kesiti. Uygulamada levhanın 20 cm'si toprağın altına girer, 50 cm'si toprağın üstünde kalır.
+- [Uygulama](https://fiberset.com.tr/#uygulama): hendek açılır, levha dik yerleştirilir, hendek kapatılır, üst kenar tel örgüye bağlanır.
+- [Saha fotoğrafları](https://fiberset.com.tr/#saha)
+- [Sık sorulanlar](https://fiberset.com.tr/#sss)
+- [Teklif ve iletişim](https://fiberset.com.tr/#iletisim)
 
 ## Ürünler
 
-- [Fiberset 150](https://fiberset.com.tr/#urun-150): 150 × 70 cm. Köşe, dönüş ve kısa kenarlar için.
-- [Fiberset 200](https://fiberset.com.tr/#urun-200): 200 × 70 cm. Düz kenarlar ve orta hatlar için.
-- [Fiberset 300](https://fiberset.com.tr/#urun-300): 300 × 70 cm. Uzun düz hatlar için, daha az ek yeri.
-- [Fiberset Özel](https://fiberset.com.tr/#urun-ozel): Ölçüye göre kesilir, 70 cm yükseklik. Kapı yanı, girinti ve eğimli arazi için.
+- [Fiberset 100](https://fiberset.com.tr/#urun-100): 100 × 70 cm. Dar aralıklar ve en kısa kenarlar için.
+- [Fiberset 150](https://fiberset.com.tr/#urun-150): 150 × 70 cm. Kısa kenarlar, dönüşler ve köşe geçişleri için.
+- [Fiberset 200](https://fiberset.com.tr/#urun-200): 200 × 70 cm. Orta uzunluktaki düz hatlar için.
+- [Fiberset 300](https://fiberset.com.tr/#urun-300): 300 × 70 cm. Uzun düz hatlarda daha az ek yeri isteyenler için.
+- [Fiberset Özel](https://fiberset.com.tr/#urun-ozel): Özel kesim · 70 cm yükseklik. Kapı yanı ve girintilerde bildirilen boya göre kesim.
 
-## Bilgi
+## Biyogüvenlik tebliği (kaynaklı özet)
 
-- [Yönetmelik rehberi](https://fiberset.com.tr/#yonetmelik): Toprak altı 20 cm, toprak üstü 50 cm kapalı engel ve kabul edilen malzemeler.
-- [Uygulama](https://fiberset.com.tr/#uygulama): Dört adım. Tel örgünün dibinde 20 cm hendek açılır, levha dik oturtulur (50 cm toprağın üstünde kalır), hendek toprakla doldurulur, levhanın üst kenarı tel örgüye bağlanır.
-- [Sık sorulanlar](https://fiberset.com.tr/#sss): Ölçüler, yönetmelik, montaj, teslimat, fiyat.
-- [Levha hesabı](https://fiberset.com.tr/#hesapla): Kümes çevresine göre gereken levha sayısı.
+- Kaynak: [Ticari Etlik ve Yumurtacı Kanatlı İşletmelerinin Biyogüvenlik Kurallarına Dair Tebliğ (No: 2025/33)](https://www.resmigazete.gov.tr/eskiler/2026/01/20260131-14.htm), Tarım ve Orman Bakanlığı; Resmî Gazete, 31 Ocak 2026, sayı 33154. Son kontrol: 19 Kasım 2026.
+- Madde 8/1: işletme sınırları en az 150 cm yüksekliğinde sağlam tel örgü ya da çitle çevrilir; tel örgü ya da çit yer seviyesinden itibaren en az 50 cm duvarla desteklenir.
+- Tebliğdeki duvar tanımı: beton, taş, tuğla, metal panel veya tahta olmayan benzeri sağlam ve dayanıklı materyallerden yapılmış, süreklilik arz eden fiziki bariyer. Fiberset fiberglass levhası bu kapsamdadır, tebliğe uygundur ve Manisa İl Tarım ve Orman Müdürlüğü'nce kabul edilen malzemedir.
+- Kapsam (madde 2): 350 ve üzeri yumurtacı tavuk, 500 ve üzeri etlik tavuk, 200 ve üzeri hindi, ördek, kaz ya da bıldırcın, 20 ve üzeri devekuşu yetiştirilen işletmeler.
+- Uyum süresi (Geçici Madde 1): yayım tarihinde Bakanlık veri sistemine kayıtlı işletmeler için yayım tarihinden itibaren 12 ay; süre Ocak 2027 sonunda doluyor.
+- Tebliğde toprak altı için ölçü yoktur. Toprağın altına inen 20 cm, Fiberset levhasının uygulama ölçüsüdür.
+
+## Bilinmesi gerekenler
+
+- Fiberset montaj hizmeti vermez. Tel örgü yoksa önce tel örgü yapılır; levha tel örgünün yerine geçmez.
+- Teklif, kapatılacak net çevreye ve seçilen levha boyuna göre hazırlanır. Akhisar, Manisa ve Balıkesir için fiyat, kümese teslim fiyatıdır.
+- Diğer illerde teslimat koşulları ve tahmini teslim süresi sipariş öncesinde netleştirilir.
+- Kümes için geçerli şartlar ve süre il ya da ilçe tarım ve orman müdürlüğünden teyit edilir; bağlayıcı olan tebliğ metnidir.
 
 ## İletişim
 
@@ -28,4 +42,4 @@
 - [WhatsApp](https://wa.me/905469360762)
 - [Instagram](https://www.instagram.com/fiberset.tr/)
 - [Facebook](https://www.facebook.com/Fiberset)
-- Hizmet bölgesi: Akhisar ve Manisa geneli. Manisa dışındaki teslimatlar için telefonla bilgi alınır.
+- Hizmet bölgesi: Akhisar başta olmak üzere Manisa'nın bütün ilçe ve köyleri ile Balıkesir; bu bölgede teslimat fiyata dahildir.

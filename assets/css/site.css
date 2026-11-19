@@ -85,7 +85,7 @@ p { margin: 0 0 1em; }
 .kategori a { color: #fff; text-decoration: none; font-weight: 700; font-size: .92rem; padding: 12px 14px; white-space: nowrap; letter-spacing: .01em; border-bottom: 3px solid transparent; transition: background .2s, border-color .2s; }
 .kategori a:hover, .kategori a.etkin { background: var(--yesil-koyu); border-bottom-color: var(--yesil-vurgu); }
 .kategori a:focus-visible { outline-offset: -3px; }
-@media (min-width: 1024px) and (max-width: 1199px) { .kategori a { padding-inline: 11px; } }
+@media (min-width: 1024px) and (max-width: 1199px) { .kategori a { padding-inline: 8px; } }
 @media (min-width: 861px) and (max-width: 1023px) { .kategori a { font-size: .84rem; padding-inline: 8px; } }
 @media (max-width: 860px) {
   .kategori-ic {
@@ -352,3 +352,133 @@ p { margin: 0 0 1em; }
   .js .goster { opacity: 1; transform: none; transition: none; }
   *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; }
 }
+
+/* ---- 18 Kasım 2026 revizyonu (rehber: ürün önce, tek teklif akışı, gerçek saha fotoğrafları) ---- */
+
+/* Ölçü kısayolları: dört daire, ortalı. Dar ekranda gizli: orada menü aynı işi görüyor. */
+.yuvarlak-ic { grid-template-columns: repeat(4, minmax(0, 150px)); justify-content: center; gap: 28px; }
+@media (max-width: 760px) { .yuvarlak { display: none; } }
+
+/* Telefonda ilk ekran: üst şerit gizlenir, fotoğraf kısalır; ürün adı, açıklama ve teklif düğmesi görünür. */
+@media (max-width: 760px) {
+  .ust-serit { display: none; }
+  .giris picture { height: 180px; }
+  .giris::after { top: 110px; height: 70px; }
+  .giris h1 { font-size: 1.85rem; }
+  .giris-alt { font-size: 1rem; }
+  .giris-dugme { margin-top: 18px; }
+  .giris-dugme .dg { flex: 1 1 100%; }
+  .giris-ic { padding-bottom: 28px; }
+}
+@media (min-width: 761px) { .giris h1 { font-size: clamp(2.1rem, 4.2vw, 3.3rem); } }
+
+/* Ürün kartı: ölçü satırı ve uzun kullanım açıklaması */
+.urun h3 { margin-bottom: .15em; }
+.urun-olcu { margin: 0 0 12px; font-weight: 800; font-size: 1.05rem; color: var(--yesil-yazi); }
+.ozellik .ozellik-uzun { flex-direction: column; gap: 2px; border-bottom: 0; }
+.ozellik .ozellik-uzun b { text-align: left; font-weight: 600; }
+.urun-dugme .dg { padding-inline: .8em; font-size: .95rem; }
+
+/* Levha hesabı: sonuç kutuları aynı zamanda boy seçimi */
+.hesap-sonuc { border: 0; padding: 0; min-width: 0; margin: 18px 0 8px; }
+.sonuc { display: block; cursor: pointer; position: relative; }
+.sonuc input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.hesap-sonuc .sonuc-ic { display: block; background: var(--yesil-zemin); border: 2px solid transparent; border-radius: 12px; padding: 10px 6px; text-align: center; font-size: 1rem; font-weight: 400; color: var(--murekkep); transition: border-color .2s, background .2s; }
+.hesap-sonuc .sonuc-boy { display: block; font-size: .85rem; font-weight: 700; color: var(--yesil-yazi); }
+.sonuc:hover .sonuc-ic { border-color: var(--yesil-isik); }
+.sonuc input:checked + .sonuc-ic { border-color: var(--yesil); background: #fff; box-shadow: var(--golge-kucuk, 0 2px 6px rgba(14, 42, 19, .12)); }
+.sonuc input:focus-visible + .sonuc-ic { outline: 3px solid var(--kontrast); outline-offset: 2px; }
+.hesap-ipucu { margin: 0 0 14px; font-size: .88rem; color: var(--murekkep-2); }
+.hesap-wa { display: block; margin-top: 12px; text-align: center; font-weight: 700; font-size: .95rem; color: var(--yesil-yazi); }
+.form-uyari { margin: 8px 0 0; font-size: .9rem; font-weight: 700; color: var(--kontrast); }
+.form-uyari[hidden] { display: none; }
+[aria-invalid="true"] { border-color: var(--kontrast) !important; }
+
+/* Saha fotoğrafları: iki sütun */
+.galeri-saha { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 760px) { .galeri-saha { grid-template-columns: 1fr; } }
+
+/* Teslimat notu */
+.teslimat-not { margin: 0 auto; padding-bottom: 30px; text-align: center; color: #E7F2E4; max-width: 760px; }
+.teslimat .teslimat-ic { padding-bottom: 18px; }
+
+/* Teklif bölümü */
+.ilt-acik { color: var(--murekkep-2); font-size: 1.04rem; }
+.teklif-tel { margin: 14px 0 0; text-align: center; font-size: .95rem; color: var(--murekkep-2); }
+.teklif-tel a { font-weight: 700; color: var(--yesil-yazi); }
+.teklif { scroll-margin-bottom: 90px; }
+/* Telefonda form doldurulurken sabit alt çubuk alanları ve gönder düğmesini örtmesin */
+body.form-odak .alt-bar { display: none; }
+
+/* Beş ürün (Fiberset 100 eklendi, 18 Kasım 2026): ürün kartları, ölçü daireleri ve hesap kutuları */
+.urunler { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 1199px) { .urunler { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 860px) { .urunler { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .urunler { grid-template-columns: minmax(0, 1fr); } }
+@media (min-width: 1200px) { .urun-govde { padding-inline: 14px; } .urun h3 { font-size: 1.18rem; } .urun-olcu { font-size: .98rem; } }
+.yuvarlak-ic { grid-template-columns: repeat(5, minmax(0, 150px)); }
+.hesap-sonuc { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.hesap-sonuc b { font-size: clamp(1.35rem, 5.2vw, 2rem); }
+
+/* Teklif alanları: site.js bağlanana kadar kapalı fieldset (JavaScript'siz veri gönderimi olmasın) */
+.teklif-alan { border: 0; padding: 0; margin: 0; min-width: 0; }
+.teklif-alan:disabled { opacity: .6; }
+.teklif-tel a { white-space: nowrap; }
+
+/* Tebliğ şeridi ve tebliğ bölümü (19 Kasım 2026; kaynak: Resmî Gazete 31.01.2026, sayı 33154) */
+.teblig-serit { background: var(--yesil-zemin-2); border-bottom: 1px solid var(--cizgi); }
+.teblig-serit-ic { display: flex; align-items: center; gap: 14px; padding-block: 12px; color: var(--murekkep); text-decoration: none; font-size: .98rem; }
+.teblig-rozet { flex: none; background: var(--kontrast); color: #fff; font-weight: 800; font-size: .78rem; letter-spacing: .06em; padding: 5px 10px; border-radius: 999px; white-space: nowrap; }
+.teblig-serit-yazi { flex: 1 1 auto; }
+.teblig-serit-ok { flex: none; display: inline-flex; align-items: center; gap: 6px; font-weight: 800; color: var(--yesil-yazi); white-space: nowrap; }
+.teblig-serit-ok .ik { width: 18px; height: 18px; transition: transform .2s; }
+.teblig-serit-ic:hover .teblig-serit-ok .ik { transform: translateX(4px); }
+.teblig-serit-ic:hover .teblig-serit-ok { text-decoration: underline; }
+@media (max-width: 760px) {
+  .teblig-serit-ic { flex-wrap: wrap; gap: 6px 10px; padding-block: 10px; font-size: .93rem; }
+  .teblig-serit-yazi { flex-basis: 100%; order: 3; }
+  .teblig-serit-ok { margin-left: auto; }
+}
+
+.teblig-kartlar { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
+.teblig-kart { position: relative; background: #fff; border: 1px solid var(--cizgi); border-radius: var(--yuvarlak); padding: 26px 22px 20px; box-shadow: var(--golge-kucuk); display: flex; flex-direction: column; }
+.teblig-kart b { display: block; font-size: clamp(2.2rem, 5vw, 3rem); font-weight: 800; line-height: 1; letter-spacing: -.02em; color: var(--yesil-koyu); margin-bottom: 12px; }
+.teblig-kart h3 { margin-bottom: .35em; }
+.teblig-kart p { margin: 0 0 14px; color: var(--murekkep-2); }
+.teblig-kart small { margin-top: auto; font-weight: 700; font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: var(--murekkep-2); }
+.teblig-kart-vurgu { background: linear-gradient(160deg, var(--yesil-koyu), var(--yesil-gece)); border-color: transparent; color: #fff; box-shadow: var(--golge); }
+.teblig-kart-vurgu b { color: var(--yesil-vurgu); }
+.teblig-kart-vurgu p { color: #D4E6D0; }
+.teblig-kart-vurgu small { color: #B9D6B4; }
+.teblig-etiket { position: absolute; top: -12px; left: 20px; background: var(--kontrast); color: #fff; font-size: .74rem; font-weight: 800; letter-spacing: .05em; padding: 4px 10px; border-radius: 999px; box-shadow: var(--golge-kucuk); }
+
+.teblig-ayrinti { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; margin-top: 40px; align-items: start; }
+.teblig-tanim blockquote { margin: 0 0 18px; padding: 16px 18px; background: var(--yesil-zemin); border-left: 4px solid var(--yesil); border-radius: 10px; }
+.teblig-tanim blockquote p { margin: 0 0 8px; font-size: 1.08rem; font-weight: 600; }
+.teblig-tanim blockquote footer { font-size: .86rem; color: var(--murekkep-2); }
+.teblig-liste dl { margin: 0; }
+.teblig-liste dt { font-weight: 800; padding-top: 14px; border-top: 1px solid var(--cizgi); }
+.teblig-liste dt:first-child { padding-top: 0; border-top: 0; }
+.teblig-liste dd { margin: 4px 0 14px; color: var(--murekkep-2); }
+.kaynak { margin: 28px 0 0; padding-top: 16px; border-top: 1px solid var(--cizgi); font-size: .9rem; color: var(--murekkep-2); }
+.kaynak a { color: var(--yesil-yazi); font-weight: 700; }
+.kesit { margin-top: clamp(44px, 6vw, 72px); }
+@media (max-width: 900px) {
+  .teblig-kartlar { grid-template-columns: 1fr; gap: 22px; }
+  .teblig-ayrinti { grid-template-columns: 1fr; gap: 28px; margin-top: 32px; }
+  .teblig-kart { padding: 22px 18px 16px; }
+}
+
+/* Süre kutusu (19 Kasım 2026): hesap bölümünde ve teklif formunun yanında; tarih tebliğin Geçici Madde 1'ine dayanır */
+.sure-kutu { display: flex; gap: 12px; align-items: flex-start; margin-top: 20px; padding: 14px 16px; background: #fff; border: 1px solid var(--cizgi); border-left: 4px solid var(--kontrast); border-radius: 10px; box-shadow: var(--golge-kucuk); }
+.sure-kutu .ik { flex: none; width: 24px; height: 24px; margin-top: 2px; color: var(--kontrast); }
+.sure-kutu p { margin: 0; font-size: .98rem; color: var(--murekkep-2); }
+.sure-kutu strong { color: var(--kontrast-koyu); }
+.sure-kutu a { color: var(--yesil-yazi); font-weight: 700; white-space: nowrap; }
+.ilt-sol .sure-kutu { margin: 0 0 22px; background: var(--kontrast-zemin); border-color: transparent; border-left-color: var(--kontrast); }
+.teslimat-not strong { color: #fff; }
+
+/* Kabul notu (19 Kasım 2026): tebliğ bölümünde yeşil onay kutusu */
+.bilgi-kutu-onay { background: var(--yesil-zemin); border-left-color: var(--yesil); }
+.bilgi-kutu-onay .ik { color: var(--yesil); }
+.bilgi-kutu-onay strong { color: var(--yesil-koyu); }
