@@ -482,3 +482,9 @@ body.form-odak .alt-bar { display: none; }
 .bilgi-kutu-onay { background: var(--yesil-zemin); border-left-color: var(--yesil); }
 .bilgi-kutu-onay .ik { color: var(--yesil); }
 .bilgi-kutu-onay strong { color: var(--yesil-koyu); }
+
+/* Geri sayım rozeti (19 Kasım 2026): hedef 31 Ocak 2027; site.js doldurup açar, JavaScript yoksa ya da süre dolduysa gizli kalır */
+.sayac-rozet { display: inline-block; background: var(--kontrast); color: #fff; font-weight: 700; font-size: .86em; line-height: 1.5; padding: 1px 10px; border-radius: 999px; white-space: nowrap; }
+.sayac-rozet b { font-weight: 800; }
+.sayac-rozet[hidden] { display: none; }
+.teblig-kart .sayac-rozet { margin-top: 6px; }

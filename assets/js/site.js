@@ -181,6 +181,17 @@
     al("teklif-alan").disabled = false;
   }
 
+  // Geri sayım: tebliğin 12 aylık uyum süresinin son günü, 31 Ocak 2027 23:59:59 (Türkiye saati, UTC+3).
+  // Kalan gün yukarı yuvarlanır (son gün "1 gün kaldı" görünür). Süre dolunca rozetler gizli kalır; metin JavaScript'siz de anlamlıdır.
+  var SON_GUN = Date.UTC(2027, 0, 31, 20, 59, 59);
+  var kalanGun = Math.ceil((SON_GUN - Date.now()) / 86400000);
+  if (kalanGun > 0) {
+    Array.prototype.forEach.call(document.querySelectorAll("[data-sayac]"), function (rozet) {
+      rozet.querySelector("[data-gun]").textContent = kalanGun;
+      rozet.hidden = false;
+    });
+  }
+
   // Kabul testleri için (mesaj göndermeden doğrulama): tarayıcı konsolundan okunur
   window.fibersetTest = { metrajOku: metrajOku, metreYaz: metreYaz, levhaSayisi: levhaSayisi, taslak: taslak };
 })();
